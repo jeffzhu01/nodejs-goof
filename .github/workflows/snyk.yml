@@ -26,8 +26,8 @@ jobs:
         run: npm install
 
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/node@master
+        uses: snyk/actions/node@jeffzhu01
         env:
-          SNYK_TOKEN: $5f84c0d4-aeb3-46bb-94df-a3cabb2b5f48{{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: $62ee5c36-d299-4752-8526-85316fd8ead0{{ secrets.SNYK_TOKEN }}
         with:
           args: test
